@@ -22,18 +22,16 @@ if (isset($_GET['length'])) {
 $count = "";
 
 if (isset($_GET['button'])) {
-
-	
 	if ((!is_numeric($height))||(!is_numeric($length))||(!(float)($width)))  {
 		echo "<p><font color= 'red' size ='6' >Данные введены не корректно!</font></p>";
 	}else{
 		$count= $height*$length*2 + $width*$height*2;
 	}
 }
-	$width = str_replace(".",",",$width);
-	$height = str_replace(".",",",$height);
-	$length = str_replace(".",",",$length);
-	$count=str_replace(".",",",$count);
+$width = str_replace(".",",",$width);
+$height = str_replace(".",",",$height);
+$length = str_replace(".",",",$length);
+$count=str_replace(".",",",$count);
 ?>
 	<body>
 		<table>
